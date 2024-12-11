@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #333;
+  padding: 0.5rem 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+nav a:hover {
+  background-color: #45a049;
+}
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
+.carousel img.active {
+  display: block;
+}
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.carousel-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+/* Estilos do Carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Defina o tamanho máximo do carrossel */
+  margin: 0 auto;
+  overflow: hidden; /* Oculta imagens fora da área do carrossel */
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: none; /* Oculta todas as imagens inicialmente */
+  transition: opacity 0.5s ease-in-out; /* Animação suave para transição */
+}
+
+.carousel-image.active {
+  display: block; /* Mostra a imagem ativa */
+}
+
+/* Estilos dos Botões de Navegação */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+#prev, #next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#prev:hover, #next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Estilos do Carrossel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Tamanho máximo do carrossel */
+  margin: 20px auto;
+  overflow: hidden; /* Oculta imagens fora da área do carrossel */
+}
+
+.carousel-image {
+  width: 100%;  /* Ajusta a largura da imagem para o tamanho do contêiner */
+  height: 300px;  /* Define uma altura fixada para todas as imagens */
+  object-fit: cover;  /* Assegura que as imagens preencham a área sem distorcer */
+  display: none; /* Oculta todas as imagens inicialmente */
+}
+
+.carousel-image.active {
+  display: block; /* Exibe a imagem ativa */
+}
+
+/* Estilos dos Botões de Navegação */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
